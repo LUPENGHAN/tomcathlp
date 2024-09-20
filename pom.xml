@@ -28,7 +28,11 @@
             <version>6.0.0</version> <!-- 或者使用最新的稳定版本 -->
             <scope>provided</scope>
         </dependency>
-
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.1</version>
+        </dependency>
     </dependencies>
     <build>
 
