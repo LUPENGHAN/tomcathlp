@@ -1,6 +1,7 @@
 package com.hlp.tomcat.http;
 
 import java.io.OutputStream;
+import java.io.PrintWriter;
 
 public class HlpResponse {
     private OutputStream outputStream = null;
@@ -13,5 +14,9 @@ public class HlpResponse {
 
     public OutputStream getOutputStream() {
         return outputStream;
+    }
+
+    public PrintWriter getWriter() {
+        return null;
     }
 }

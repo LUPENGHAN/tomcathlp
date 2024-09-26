@@ -10,13 +10,15 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class CalServlet extends HttpServlet {
+
+
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         doPost(req, resp);
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //接受提交的数据
         String strnum1 = req.getParameter("num1");
         String strnum2 = req.getParameter("num2");

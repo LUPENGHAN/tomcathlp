@@ -2,6 +2,11 @@ package com.hlp.tomcat.servlet;
 
 import com.hlp.tomcat.http.HlpRequest;
 import com.hlp.tomcat.http.HlpResponse;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+import java.io.IOException;
 
 public abstract class HlpHttpServlet implements HlpServlet{
     @Override
@@ -15,4 +20,5 @@ public abstract class HlpHttpServlet implements HlpServlet{
     //抽象模板设计模式
     public abstract void doGet(HlpRequest request, HlpResponse response);
     public abstract void doPost(HlpRequest request, HlpResponse response);
+
 }

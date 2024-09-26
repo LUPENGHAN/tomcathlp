@@ -5,7 +5,7 @@
          version="4.0">
     <servlet>
         <servlet-name>CalServlet</servlet-name>
-        <servlet-class>com.hlp.servlet.CalServlet</servlet-class>
+        <servlet-class>com.hlp.tomcat.servlet.HlpCalServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CalServlet</servlet-name>
